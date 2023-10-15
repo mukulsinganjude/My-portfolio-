@@ -178,7 +178,7 @@ section {
 .btn-box {
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 27rem;
     height: 5rem;
     margin-bottom: -2rem;
@@ -727,6 +727,16 @@ span {
 .skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
     width: 70%;
 }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(7) .bar span {
+    width: 60%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(8) .bar span {
+    width: 80%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(9) .bar span {
+    width: 70%;
+}
 
 
 
@@ -750,6 +760,16 @@ span {
     width: 75%;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span {
+    width: 70%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(7) .bar span {
+    width: 75%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(8) .bar span {
+    width: 75%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(9) .bar span {
     width: 70%;
 }
 
@@ -786,6 +806,7 @@ span {
 
 .project-column .project-box {
     position: relative;
+    
 }
 
 .project-column {
@@ -794,11 +815,13 @@ span {
 
 .project-box .project-content {
     position: relative;
+    height: 25rem;
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     padding: .4rem 1.3rem;
     z-index: 1;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .project-box .project-content::before {
@@ -836,6 +859,9 @@ span {
     padding: 1rem 0;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
     
 }
 
@@ -845,10 +871,6 @@ span {
     justify-content: space-between;
     color: var(--main-color);
     align-items: start;
-}
-.project-content .progress-2  {
-    display: flex;
-    align-items: center;   
 }
 
 .project-content .progress-2 h3 span {

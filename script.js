@@ -96,6 +96,13 @@ document.getElementById("github-icon2").addEventListener("click", function() {
     window.open(resumeUrl, "_blank");
   });
 
+// To open cmd-ui github in a Google Drive on new window 
+document.getElementById("linkedin-link").addEventListener("click", function() {
+    var resumeUrl = "https://www.linkedin.com/in/mukul-singanjude-003902245/"
+    // Open the resume in a new browser window
+    window.open(resumeUrl, "_blank");
+  });
+
 // To open Resume in a Google Drive on new window 
 document.getElementById("resumeButton").addEventListener("click", function() {
     // Replace the URL below with the shareable link of your resume on Google Drive
@@ -116,6 +123,21 @@ document.getElementById("gitbutton").addEventListener("click", function() {
 // To open jobk-ckeck live in a Google Drive on new window 
 document.getElementById("Button-1").addEventListener("click", function() {
     var resumeUrl = "https://jobcheck-search-screen.netlify.app/"
+    // Open the resume in a new browser window
+    window.open(resumeUrl, "_blank");
+  });
+
+  
+// To open carWala github in a Google Drive on new window 
+document.getElementById("gitbutton-carwala").addEventListener("click", function() {
+    var resumeUrl = "https://github.com/mukulsinganjude/car-website"
+    // Open the resume in a new browser window
+    window.open(resumeUrl, "_blank");
+  });
+
+// To open carWala live in a Google Drive on new window 
+document.getElementById("Button-carwala").addEventListener("click", function() {
+    var resumeUrl = "https://carwala-ms.netlify.app/"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });

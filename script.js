@@ -85,20 +85,20 @@ toggleBtn.addEventListener('click', function () {
 
 // To open cmd-ui github in a Google Drive on new window 
 document.getElementById("github-icon").addEventListener("click", function() {
-    var resumeUrl = "https://github.com/mukulsinganjude"
+    let resumeUrl = "https://github.com/mukulsinganjude"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
 // To open cmd-ui github in a Google Drive on new window 
 document.getElementById("github-icon2").addEventListener("click", function() {
-    var resumeUrl = "https://github.com/mukulsinganjude"
+    let resumeUrl = "https://github.com/mukulsinganjude"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
 
 // To open cmd-ui github in a Google Drive on new window 
 document.getElementById("linkedin-link").addEventListener("click", function() {
-    var resumeUrl = "https://www.linkedin.com/in/mukul-singanjude-003902245/"
+    let resumeUrl = "https://www.linkedin.com/in/mukul-singanjude-003902245/"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
@@ -106,7 +106,7 @@ document.getElementById("linkedin-link").addEventListener("click", function() {
 // To open Resume in a Google Drive on new window 
 document.getElementById("resumeButton").addEventListener("click", function() {
     // Replace the URL below with the shareable link of your resume on Google Drive
-    var resumeUrl = "https://drive.google.com/file/d/1dtXpIMe45zKS6gHQMlUp8920kc890fDD/view?usp=sharing";
+    let resumeUrl = "https://drive.google.com/file/d/1dtXpIMe45zKS6gHQMlUp8920kc890fDD/view?usp=sharing";
 
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
@@ -115,14 +115,14 @@ document.getElementById("resumeButton").addEventListener("click", function() {
 
 // To open jobk-ckeck github in a Google Drive on new window 
 document.getElementById("gitbutton").addEventListener("click", function() {
-    var resumeUrl = "https://github.com/mukulsinganjude/Job-Check"
+    let resumeUrl = "https://github.com/mukulsinganjude/Job-Check"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
 
 // To open jobk-ckeck live in a Google Drive on new window 
 document.getElementById("Button-1").addEventListener("click", function() {
-    var resumeUrl = "https://jobcheck-search-screen.netlify.app/"
+    let resumeUrl = "https://jobcheck-search-screen.netlify.app/"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
@@ -130,14 +130,14 @@ document.getElementById("Button-1").addEventListener("click", function() {
   
 // To open carWala github in a Google Drive on new window 
 document.getElementById("gitbutton-carwala").addEventListener("click", function() {
-    var resumeUrl = "https://github.com/mukulsinganjude/car-website"
+    let resumeUrl = "https://github.com/mukulsinganjude/car-website"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
 
 // To open carWala live in a Google Drive on new window 
 document.getElementById("Button-carwala").addEventListener("click", function() {
-    var resumeUrl = "https://carwala-ms.netlify.app/"
+    let resumeUrl = "https://carwala-ms.netlify.app/"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
@@ -145,28 +145,28 @@ document.getElementById("Button-carwala").addEventListener("click", function() {
 
 // To open portfilio github in a Google Drive on new window 
 document.getElementById("gitbutton-port").addEventListener("click", function() {
-    var resumeUrl = "https://github.com/mukulsinganjude/My-portfolio-"
+    let resumeUrl = "https://github.com/mukulsinganjude/My-portfolio-"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
 
 // To open portfolio live in a Google Drive on new window 
 document.getElementById("Button-port").addEventListener("click", function() {
-    var resumeUrl = "https://portfolioms20.netlify.app/"
+    let resumeUrl = "https://portfolioms20.netlify.app/"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
 
 // To open cmd-ui github in a Google Drive on new window 
 document.getElementById("gitbutton-cmd").addEventListener("click", function() {
-    var resumeUrl = "https://github.com/mukulsinganjude/CMD_UI"
+    let resumeUrl = "https://github.com/mukulsinganjude/CMD_UI"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
 
 // To open portfolio live in a Google Drive on new window 
 document.getElementById("Button-cmd").addEventListener("click", function() {
-    var resumeUrl = "/Other Pages/404_error.html"
+    let resumeUrl = "/Other Pages/404_error.html"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
@@ -174,42 +174,43 @@ document.getElementById("Button-cmd").addEventListener("click", function() {
 
 // To open 3-tier github in a Google Drive on new window 
 document.getElementById("gitbutton-3-tier").addEventListener("click", function() {
-    var resumeUrl = "/Other Pages/404_error2.html"
+    let resumeUrl = "/Other Pages/404_error2.html"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
 
 // To open 3-tier live in a Google Drive on new window 
 document.getElementById("Button-3-tier").addEventListener("click", function() {
-    var resumeUrl = "/Other Pages/404_error3.html"
+    let resumeUrl = "/Other Pages/404_error3.html"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
 
 // To open flipkar github in a Google Drive on new window 
 document.getElementById("gitbutton-flipkar").addEventListener("click", function() {
-    var resumeUrl = "https://github.com/mukulsinganjude/FlipKart-Clone"
+    let resumeUrl = "https://github.com/mukulsinganjude/FlipKart-Clone/"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
-
 // To open flipkar live in a Google Drive on new window 
-document.getElementById("Button-flipkar").addEventListener("click", function() {
-    var resumeUrl = "https://flipkart-clone-ms.netlify.app/products"
+document.getElementById("button-flipkar").addEventListener("click", function() {
+    let resumeUrl = "https://flipkart-clone-ms.netlify.app/products/"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
 
 // To open cleartrip github in a Google Drive on new window 
 document.getElementById("gitbutton-cleartrip").addEventListener("click", function() {
-    var resumeUrl = "https://github.com/mukulsinganjude/Cleartrip-clone"
+    let resumeUrl = "https://github.com/mukulsinganjude/Cleartrip-clone"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
 
 // To open cleartrip live in a Google Drive on new window 
 document.getElementById("Button-cleartrip").addEventListener("click", function() {
-    var resumeUrl = "https://cleartrip-clone.netlify.app/"
+    let resumeUrl = "https://cleartrip-clone.netlify.app"
     // Open the resume in a new browser window
     window.open(resumeUrl, "_blank");
   });
+
+  

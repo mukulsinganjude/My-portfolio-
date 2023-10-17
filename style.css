@@ -669,7 +669,7 @@ span {
 }
 
 .skills-content .progress {
-    padding: 1rem 0;
+    padding: 0.1rem 0;
 }
 
 .skills-content .progress h3 {
@@ -728,7 +728,7 @@ span {
     width: 70%;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(7) .bar span {
-    width: 60%;
+    width: 75%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(8) .bar span {

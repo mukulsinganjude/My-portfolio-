@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+>>>>>>> d65885d088199a493c08a03ce6d717c08e03d876
 
 * {
     margin: 0;
@@ -8,7 +12,11 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
+<<<<<<< HEAD
     font-family: 'DM Sans', sans-serif;
+=======
+    font-family: 'Poppins', sans-serif;
+>>>>>>> d65885d088199a493c08a03ce6d717c08e03d876
 }
 
 :root {
@@ -1094,6 +1102,7 @@ span {
     color: var(--main-color);
 }
 
+<<<<<<< HEAD
 /* Portfolio refresh */
 :root {
     --bg-color: #071521;
@@ -1316,6 +1325,8 @@ body > section:not(.home) { padding-top: 7.5rem; padding-bottom: 6rem; }
     *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 
+=======
+>>>>>>> d65885d088199a493c08a03ce6d717c08e03d876
 /* // BreakPoint */
 
 @media (max-width: 1200px) {
@@ -1643,4 +1654,8 @@ section:nth-child(odd) .animate.scroll,
     background: var(--main-color);
     z-index: -1;
     transition: 1s;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d65885d088199a493c08a03ce6d717c08e03d876

@@ -51,6 +51,27 @@ window.addEventListener('scroll', updatePageState, { passive: true });
 window.addEventListener('resize', updatePageState);
 updatePageState();
 
+const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+const revealTargets = document.querySelectorAll(
+  '.about-img, .skills-2 .skills-column-2, .eduction-column, .skills-column, .project-column, .contact iframe, .skills-1 .skills-column-1',
+);
+
+if (!motionPreference.matches && 'IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' });
+
+  revealTargets.forEach((element, index) => {
+    element.classList.add('reveal');
+    element.style.setProperty('--reveal-delay', `${(index % 4) * 90}ms`);
+    revealObserver.observe(element);
+  });
+}
+
 if (window.Typed) {
   new Typed('.multiple-text', {
     strings: ['Frontend Developer', 'Angular Developer', 'Linux Administrator', 'AWS Administrator'],

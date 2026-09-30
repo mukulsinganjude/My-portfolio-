@@ -1644,3 +1644,74 @@ body > section:not(.home) { padding-top: 7.5rem; padding-bottom: 6rem; }
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Motion and visual details */
+.home-content {
+    animation: hero-arrive .85s cubic-bezier(.2, .75, .25, 1) both;
+}
+
+.home::after {
+    animation: orbit-breathe 12s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.logo-mark {
+    animation: logo-glow 5s ease-in-out infinite;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(28px) scale(.985);
+    filter: blur(4px);
+    transition: opacity .7s ease, transform .7s cubic-bezier(.2, .75, .25, 1), filter .7s ease;
+    transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+}
+
+.project-box .project-content,
+.skills-content-2,
+.eduction-content,
+.skills-content,
+.skills-content-1 {
+    transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease, background-color .35s ease;
+}
+
+.project-column:hover .project-content,
+.skills-column-2:hover .skills-content-2,
+.eduction-content:hover,
+.skills-content:hover,
+.skills-content-1:hover {
+    transform: translateY(-5px);
+    border-color: rgba(85, 214, 190, .55) !important;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .16);
+}
+
+@keyframes hero-arrive {
+    from { opacity: 0; transform: translateY(22px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes orbit-breathe {
+    0%, 100% { transform: translateY(-50%) scale(.96); opacity: .62; }
+    50% { transform: translateY(-50%) scale(1.035); opacity: 1; }
+}
+
+@keyframes logo-glow {
+    0%, 100% { box-shadow: inset 0 1px rgba(255,255,255,.14), 0 5px 18px rgba(0,0,0,.18); }
+    50% { box-shadow: inset 0 1px rgba(255,255,255,.2), 0 0 22px rgba(85,214,190,.2); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-content, .home::after, .logo-mark { animation: none; }
+    .reveal, .reveal.is-visible { opacity: 1; transform: none; filter: none; transition: none; }
+    .project-column:hover .project-content,
+    .skills-column-2:hover .skills-content-2,
+    .eduction-content:hover,
+    .skills-content:hover,
+    .skills-content-1:hover { transform: none; }
+}
